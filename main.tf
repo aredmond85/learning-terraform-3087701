@@ -15,7 +15,7 @@ data "aws_ami" "app_ami" {
 }
 
 data "aws_vpc" "test_vpc" {
-  test_vpc = true
+  default = true
 }
 
 resource "aws_instance" "blog" {
